@@ -1,0 +1,54 @@
+
+/* Cell Phone Type Device */
+@media screen and (max-width: 479px){
+
+#Navbar {
+  padding: 5px;
+  background-color: var(--navbar-background-color);
+}
+
+#mainTitle {
+  color: var(--navbar-link-text);
+  text-align: center;
+  font-size: 5.78vw;
+}
+
+#subTitle {
+  color: var(--navbar-link-text);
+  text-align: center;
+  font-size: 4vw;
+}
+
+.heading {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  background-color: var(--navbar-link-text);
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  padding: 2px 0px;
+}
+
+.menu {
+  font-size: 4.25vw;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 3px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--navbar-background-color);
+}
+
+.menu:hover {
+  color: var(--navbar-link-text);
+  background-color: var(--navbar-background-color);
+
+
+}
+
+}

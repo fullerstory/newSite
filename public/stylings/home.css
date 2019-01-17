@@ -1,0 +1,29 @@
+/* Cell Phone Type Device */
+@media screen and (max-width: 479px){
+
+.mainPagePic {
+  max-height: 60vh;
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.mainPageTitle {
+  font-weight: bold;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+.mainText {
+  width: 95%;
+  margin: auto;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 3.15vw;
+}
+
+
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuller Story of Franklin</title>
+  <meta name="author" content="BradDavis">
+  <meta name="description" content="Fuller Story was created to provide a fuller story of the history of Franklin. The primary purpose is to incorporate all those affected by the actions leading up to the Civil War through the Jim Crow era. The goal is to create historical markers to facilitate conversations that lead to reconciliation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <meta name="google-site-verification" content="soYPEy6rXOLUyR7_wAREF2Yflu21fWbJPZt59C4qXz8" />
+  <meta name="keywords" content="FullerStory, A Fuller Story of Franklin, Franklin, Civil War, monument, USCT, United States Colored Troops, Chip, Battlefield, 1867 Riot, Jim Crow, Reconstruction, Slavery">
+  <meta property="og:image" content="https://cdn.rawgit.com/fullerstory/fullerstory.github.io/cebc9013/fullerStoryStatue.jpg">
+  <style name="AppTheme" parent="AppBaseTheme">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    @media screen and (max-width: 379px){
+      #background{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .heading{
+         position: fixed;
+         width: 100%;
+         height: 18vw;
+         font-family: 'Cinzel', serif;
+         top: 0px;
+         left: 0px;
+         padding-bottom: 6%;
+         text-align: center;
+         line-height: 1;
+         background-color: black;
+         color: #E0A10E;
+         z-index: 5;
+      }
+      #leftHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #bigHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 7vw;
+      }
+      #rightHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #tagHeading{
+        position: relative;
+        top: -15vw;
+        padding-top: 0%;
+        font-size: 3vw;
+      }
+      #resolution{
+        position: relative;
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 5%;
+        z-index: 3;
+      }
+      #titleResolution{
+        position: relative;
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 5vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #fullerStoryPic{
+        position: relative;
+        width: 80%;
+        margin-top: 30%;
+        margin-left: 10%;
+        z-index: 3;
+      }
+      #mainText{
+        position: relative;
+        text-align: center;
+        margin-top: 23vw;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems{
+        position: relative;
+        margin-top: 3vw;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 9%;
+        margin-right: 5%;
+        z-index: 3;
+        margin-bottom: 5%;
+      }
+      #mainText1{
+        position: relative;
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems1{
+        position: relative;
+        margin-top: 3vw;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        z-index: 3;
+        margin-bottom: 5%;
+      }
+      #menu{
+        position: relative;
+        display: inline-block;
+        top: -18.5vw;
+        background-color: black;
+        font-size: 2.25vw;
+        margin-bottom: 0vw;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-decoration: none;
+        color: white;
+      }
+      #menu:hover{
+        color: #E0A10E;
+      }
+      #petition{
+         position: absolute;
+         width: 95vw;
+         height: 5vw;
+         color: black;
+         margin-top: 5%;
+         margin-left: 1vw;
+         margin-right: 1vw;
+         font-weight: bold;
+         font-size: 5vw;
+         text-decoration: none;
+         text-align: center;
+         line-height: 1;
+         z-index: 4;
+         animation-name: flash;
+         animation-duration: 0.8s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-play-state: running;
+      }
+      @keyframes flash {
+        from {color: #cc3300;}
+        to {color: black;}
+      }
+
+    }
+    @media screen and (min-width: 380px) and (max-width: 1100px){
+      #background{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .heading{
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        font-family: 'Cinzel', serif;
+        top: 0px;
+        left: 0px;
+        padding-bottom: 2.5%;
+        text-align: center;
+        line-height: 1;
+        background-color: black;
+        color: #E0A10E;
+        z-index: 5;
+      }
+      #leftHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #bigHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 7vw;
+      }
+      #rightHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #tagHeading{
+        position: relative;
+        top: -15vw;
+        padding-top: 0%;
+        font-size: 3vw;
+      }
+      #resolution{
+        position: relative;
+        width: 90%;
+        margin-top: 2%;
+        margin-left: 5%;
+        z-index: 4;
+      }
+      #titleResolution{
+        position: relative;
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 5vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #fullerStoryPic{
+        position: relative;
+        width: 40%;
+        margin-top: 21%;
+        margin-left: 30%;
+        z-index: 4;
+      }
+      #mainText{
+        position: relative;
+        text-align: center;
+        margin-top: 23vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems{
+        position: relative;
+        margin-top: 3vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-left: 9%;
+        margin-right: 5%;
+        z-index: 3;
+        margin-bottom: 5%;
+      }
+      #mainText1{
+        position: relative;
+        text-align: center;
+        top: 0vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems1{
+        position: relative;
+        margin-top: 3vw;
+        font-size: 2.6vw;
+        font-weight: bold;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        z-index: 3;
+        margin-bottom: 5%;
+      }
+      #menu{
+        position: relative;
+        display: inline-block;
+        top: -18.5vw;
+        background-color: black;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-decoration: none;
+        color: white;
+      }
+      #menu:hover{
+        color: #E0A10E;
+      }
+      #petition{
+         position: absolute;
+         width: 95vw;
+         height: 5vw;
+         color: black;
+         margin-top: 5%;
+         margin-left: 1vw;
+         margin-right: 1vw;
+         font-weight: bold;
+         font-size: 5vw;
+         text-decoration: none;
+         text-align: center;
+         line-height: 1;
+         z-index: 4;
+         animation-name: flash;
+         animation-duration: 0.8s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-play-state: running;
+      }
+      @keyframes flash {
+        from {color: #cc3300;}
+        to {color: black;}
+      }
+    }
+    @media screen and (min-width: 1101px){
+      #background{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+      .heading{
+        position: fixed;
+        width: 100%;
+        height: 11.5vw;
+        font-family: 'Cinzel', serif;
+        top: 0px;
+        padding-top: 1vw;
+        left: 0px;
+        text-align: center;
+        line-height: 1;
+        background-color: black;
+        color: #E0A10E;
+        z-index: 5;
+      }
+      #leftHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #bigHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 5vw;
+      }
+      #rightHeading{
+        position: relative;
+        top: -5.5vw;
+        display: inline-block;
+        font-size: 3vw;
+      }
+      #tagHeading{
+        position: relative;
+        top: -12.5vw;
+        padding-top: 0%;
+        font-size: 2vw;
+      }
+      #resolution{
+        position: relative;
+        width: 60%;
+        margin-top: 0%;
+        margin-left: 20%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        z-index: 4;
+      }
+      #titleResolution{
+        position: relative;
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 3.5vw;
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1;
+        z-index: 3;
+      }
+      #fullerStoryPic{
+        position: relative;
+        width: 60%;
+        margin-top: 13%;
+        margin-left: 20%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        z-index: 4;
+      }
+      #mainText{
+        position: relative;
+        text-align: center;
+        margin-top: 2%;
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #mainText1{
+        position: relative;
+        text-align: center;
+        margin-top: 1vw;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-bottom: 2%;
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems{
+        position: relative;
+        top: 0vw;
+        width: 60%;
+        margin-left: 4%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #listItems1{
+        position: relative;
+        margin-top: 10vw;
+        width: 60%;
+        margin-left: 4%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 1.65vw;
+        font-weight: bold;
+        line-height: 1;
+        z-index: 3;
+      }
+      #menu{
+        position: relative;
+        display: inline-block;
+        top: -16vw;
+        font-size: 1.5vw;
+        padding-top: 1%;
+        padding-left: 1.25%;
+        padding-right: 1.25%;
+        padding-bottom: 0px;
+        text-decoration: none;
+        color: white;
+      }
+      #menu:hover{
+        color: #E0A10E;
+      }
+      #petition{
+         position: absolute;
+         width: 60vw;
+         height: 5vw;
+         color: black;
+         margin-top: 13%;
+         margin-left: 1vw;
+         margin-right: 1vw;
+         font-weight: bold;
+         font-size: 3.5vw;
+         text-decoration: none;
+         text-align: center;
+         line-height: 1;
+         z-index: 4;
+         animation-name: flash;
+         animation-duration: 0.8s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         animation-play-state: running;
+      }
+      @keyframes flash {
+        from {color: #cc3300;}
+        to {color: black;}
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+
+<body>
+  <img src="fullerStoryBackground.jpg" id="background">
+  <div class="heading">
+    <p id="leftHeading">Seeking To Tell A &nbsp</p>
+    <p id="bigHeading">Fuller Story</p>
+    <p id="rightHeading">&nbsp Of Franklin</p>
+    <p id="tagHeading">Learning From Our Past To Reconcile Our Future</p>
+    <a href="https://www.fullerstory.org/USCT" id="menu"><br>United States Colored Troops</a>
+    <a href="https://www.fullerstory.org/Courthouse-MarketHouse" id="menu">Courthouse/Market House</a>
+    <a href="https://www.fullerstory.org/1867Riot" id="menu">1867 Riot</a>
+    <a href="https://www.fullerstory.org/Reconstruction-JimCrow" id="menu">Reconstruction & Jim Crow</a>
+    <a href="https://www.fullerstory.org/Statue" id="menu">USCT Statue</a>
+    <a href="https://www.fullerstory.org/Media" id="menu">Media</a>
+    <a href="https://www.fullerstory.org/Donate" id="menu">Donate</a>
+</div>
+
+
+  <img src="statue.JPG" id="fullerStoryPic">
+
+  <p id="titleResolution">The following resolution was passed on September 25, 2018. We thank everyone for their support and God for His favor.</p>
+  <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/42625726_10212310715698302_542771406790721536_o.jpg?_nc_cat=103&oh=510b6a926764b139b04fff2e70f57b22&oe=5C594BA8" id="resolution">
+
+  <p id="mainText">After the tragic events in Charlottesville, VA last August, conversations started happening in Franklin about how our city would (or would not) react if something similar happened here. In a lot of ways, our city is like Charlottesville. These discussions led to the thought that it would be better to be “actionary” instead of “reactionary.” The result of these conversations led to the idea that instead of taking down historical markers, what if we added to them and told a     “fuller story.” Further, it was believed that the CHURCH in Franklin should lead this effort.<br><br>Over the course of this past year we have initiated further dialogue between<br></p>
+  <p id="listItems">…pastors and church leaders.<br>…the historical community in Franklin and Williamson County.<br>…the city administrator, city mayor and county mayor.<br>…the downtown business community.<br>…and a host of individuals.</p>
+
+  <p id="mainText1"> Timeline <br><br>Phase 1 (four historical markers around the downtown square) – A dedication of these markers on Monday, January 14, 2019 during the CHURCHES’ annual Martin Luther King Day Celebration. <br><br>The four markers are:<br><br>•	United States Colored Troops<br>•	1867 Downtown Riot<br>•	Courthouse and Market House<br>•	Reconstruction and Jim Crow<br><br><br>Phase 2 – Erect a statue of a United States Colored Troop soldier at a yet to be determined location inside the city limits of Franklin. A dedication of this statue on Monday, January 13, 2020 during the CHURCHES’ annual Martin Luther King Day Celebration. <br><br>• Present “Fuller Story” at BOMA Workshop on Tuesday, August 14, 2018. <br>•	Present “Fuller Story” to County Commissioners on Monday, September 10, 2018.<br>• Announce fundraiser for the USCT statue September / October 2018.<br>• A fall “revival” with the CHURCHES in Franklin / Williamson County.<br><br> <br>The Ask <br><br>We are asking you, the city leaders, to lend your support behind our efforts and to help us with the locations of the markers and the statue. We are not asking the city for any money. All funds will be raised through private donations.</p>
+
+</body>
+</html>
