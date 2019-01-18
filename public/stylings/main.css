@@ -1,14 +1,20 @@
 @import "nav.css";
 @import "home.css";
+@import "usct.css";
 
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Staatliches', cursive;
 }
 
 body {
   background-image: url("../images/fullerStoryBackground.jpg");
   background-size: cover;
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-family: 'Erica One', cursive; */
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-family: 'Staatliches', cursive; */
 }
 
 :root {

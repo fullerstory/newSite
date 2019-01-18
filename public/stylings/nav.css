@@ -9,14 +9,16 @@
 
 #mainTitle {
   color: var(--navbar-link-text);
-  text-align: center;
-  font-size: 5.78vw;
+    text-align: center;
+    font-size: 7.6vw;
+    font-weight: bold;
 }
 
 #subTitle {
   color: var(--navbar-link-text);
   text-align: center;
-  font-size: 4vw;
+  font-size: 4.25vw;
+  font-weight: 100;
 }
 
 .heading {
