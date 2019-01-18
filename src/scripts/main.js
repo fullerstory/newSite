@@ -1,5 +1,5 @@
 import navBar from "./nav";
-import home from "./home";
+import Home from "./home";
 
 navBar.loadNavbar()
-home.mainPage()
+Home.main()

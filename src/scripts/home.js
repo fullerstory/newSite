@@ -1,8 +1,8 @@
 let placeholder = document.getElementById("Main")
 
-const home = {
+const Home = {
 
-  mainPage() {
+  main() {
     placeholder.innerHTML = `
     <img src="images/statue.JPG" class="mainPagePic">
     <p class="mainPageTitle">The following resolution was passed on September 25, 2018. We thank everyone for their support and God for His favor.</p>
@@ -13,4 +13,4 @@ const home = {
   }
 }
 
-export default home
+export default Home

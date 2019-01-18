@@ -36,19 +36,19 @@
   font-weight: bold;
   text-decoration: none;
   margin: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   padding: 0px 3px;
   border-radius: 7px;
   cursor: pointer;
   color: var(--navbar-background-color);
+  border: 0px;
+  line-height: 1.15;
 }
 
 .menu:hover {
   color: var(--navbar-link-text);
   background-color: var(--navbar-background-color);
-
-
 }
 
 }
