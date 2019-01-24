@@ -3,6 +3,7 @@ let placeholder = document.getElementById("Main")
 const Home = {
 
   main() {
+    window.scrollTo(0, 0);
     placeholder.innerHTML = `
     <img src="images/statue.JPG" class="mainPagePic">
     <p class="mainPageTitle">The following resolution was passed on September 25, 2018. We thank everyone for their support and God for His favor.</p>
