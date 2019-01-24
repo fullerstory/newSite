@@ -1,0 +1,20 @@
+.statue_image {
+  max-width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 4vh;
+}
+
+#main_text {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#sub_title {
+  margin-top: 4vw;
+  font-size: 18px;
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: center;
+}

@@ -9,37 +9,58 @@ import Home from "./home"
 
 let placeholder = document.getElementById("Navbar")
 
+
 const navBar = {
 
   eventListeners(event) {
     let newPage = event.target.value;
     switch(newPage) {
       case "usct":
+        navBar.hideMarkers()
         USCT.main()
         break;
       case "courthouse":
+        navBar.hideMarkers()
         Courthouse.main()
         break;
       case "riot":
+        navBar.hideMarkers()
         Riot.main()
         break;
       case "reconstruction":
+        navBar.hideMarkers()
         Reconstruction.main()
         break;
       case "statue":
+        navBar.hideMarkers()
         Statue.main()
         break;
       case "media":
+        navBar.hideMarkers()
         Media.main()
         break;
       case "donate":
+        navBar.hideMarkers()
         Donate.main()
         break;
       case "home":
+        navBar.hideMarkers()
         Home.main()
+        break;
+      case "markers":
+        navBar.hideMarkers()
         break;
 
     }
+  },
+
+  makeMarkers(value, text) {
+    let btn = document.createElement("button")
+    btn.addEventListener("click", navBar.eventListeners)
+    btn.setAttribute("value", value)
+    btn.setAttribute("class", "markers")
+    btn.innerText = text
+    return btn
   },
 
   makeBtn(value, text) {
@@ -63,16 +84,46 @@ const navBar = {
     elementHolder.appendChild(subHeading)
     let div = document.createElement("div")
     div.setAttribute("class", "heading")
-    div.appendChild(navBar.makeBtn("usct", "United States Colored Troops"))
-    div.appendChild(navBar.makeBtn("courthouse", "Courthouse/Market House"))
-    div.appendChild(navBar.makeBtn("riot", "1867 Riot"))
-    div.appendChild(navBar.makeBtn("reconstruction", "Reconstruction & Jim Crow"))
-    div.appendChild(navBar.makeBtn("statue", "USCT Statue"))
-    div.appendChild(navBar.makeBtn("media", "Media"))
-    div.appendChild(navBar.makeBtn("donate", "Donate"))
-    div.appendChild(navBar.makeBtn("home", "Home"))
+    let sect = document.createElement("section")
+    sect.setAttribute("class", "home_menu")
+    sect.appendChild(navBar.makeBtn("home", "Home Page"))
+    div.appendChild(sect)
+    sect = document.createElement("section")
+    sect.setAttribute("class", "markers_menu")
+    let markers = navBar.makeBtn("markers", "Menu")
+    markers.setAttribute("id", "Markers")
+    sect.appendChild(markers)
+    sect.appendChild(navBar.makeMarkers("usct", "United States Colored Troops"))
+    sect.appendChild(navBar.makeMarkers("courthouse", "Courthouse / Market House"))
+    sect.appendChild(navBar.makeMarkers("riot", "1867 Riot"))
+    sect.appendChild(navBar.makeMarkers("reconstruction", "Reconstruction & Jim Crow"))
+    sect.appendChild(navBar.makeMarkers("statue", "USCT Statue"))
+    sect.appendChild(navBar.makeMarkers("donate", "Donate"))
+    div.appendChild(sect)
+    sect = document.createElement("section")
+    sect.setAttribute("class", "media_menu")
+    sect.appendChild(navBar.makeBtn("media", "News Media"))
+    div.appendChild(sect)
     elementHolder.appendChild(div)
     placeholder.appendChild(elementHolder)
+    navBar.hideMarkers()
+  },
+
+  hideMarkers() {
+    let Markers = document.getElementById("Markers")
+    Markers.removeEventListener("click", navBar.hideMarkers)
+    Markers.addEventListener("click", navBar.showMarkers)
+    Markers.innerHTML = "Menu"
+    $("#Markers").show()
+    $(".markers").hide()
+  },
+
+  showMarkers() {
+    let Markers = document.getElementById("Markers")
+    Markers.removeEventListener("click", navBar.showMarkers)
+    Markers.addEventListener("click", navBar.hideMarkers)
+    Markers.innerHTML = "Hide Menu"
+    $(".markers").show()
   }
 
 

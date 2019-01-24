@@ -1,0 +1,37 @@
+.new_story {
+  width: calc(100% - 10px);
+  margin-top: 30px;
+  padding: 5px;
+  background-color: black;
+}
+
+.news_link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.new_image {
+  width: 90vw;
+  margin-left: calc(5vw - 5px);
+}
+
+.new_date {
+  line-height: 1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.new_source {
+  line-height: 1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.new_content {
+  line-height: 1;
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 13px;
+  text-align: center;
+}
