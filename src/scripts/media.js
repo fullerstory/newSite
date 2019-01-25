@@ -44,16 +44,12 @@ const Media = {
       image.setAttribute("src", story.img)
       let date = document.createElement("p")
       date.setAttribute("class", "new_date")
-      date.innerHTML = story.date
-      let source = document.createElement("p")
-      source.setAttribute("class", "new_source")
-      source.innerHTML = story.source
+      date.innerHTML = `${story.date} - ${story.source}`
       let content = document.createElement("p")
       content.setAttribute("class", "new_content")
       content.innerHTML = story.content
       link.appendChild(image)
       link.appendChild(date)
-      link.appendChild(source)
       link.appendChild(content)
       article.appendChild(link)
       newsSection.appendChild(article)
