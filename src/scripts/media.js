@@ -1,5 +1,6 @@
 let placeholder = document.getElementById("Main")
 const news = [
+  {href: "https://franklinhomepage.com/franklin-aldermen-more-open-to-fuller-story-historical-marker-plan-after-tuesday-work-session/?fbclid=IwAR2zSK3PwhKd9mLtDaK55tV01mlrtpD2wclblb6ZfPobcsdJwfdJyqQ-Nro", img: "../images/artistRendering2.png", date: "February 12, 2019", source: "Franklin Homepage", content: "Franklin aldermen more open to ‘fuller story’ historical marker plan after Tuesday work session"},
   {href: "http://www.williamsonherald.com/news/article_a047f9de-1efe-11e9-b913-f34c8c53b334.html", img: "../images/alderman.jpg", date: "January 23, 2019", source: "Williamson Herald", content: "Aldermen show strong opinions on 'Fuller Story' marker placement"},
   {href: "https://williamsonsource.com/martin-luther-king-jr-celebration-tells-fuller-story/", img: "../images/williamsonSource.jpg", date: "January 22, 2019", source: "Williamson Source", content: "Martin Luther King Jr. Celebration Shares “Fuller Story”"},
   {href: "http://www.williamsonherald.com/news/article_4026d0a0-1dc5-11e9-9227-2b9896f57f70.html", img: "../images/mlk.jpg", date: "January 21, 2019", source: "Williamson Herald", content: "Martin Luther King Jr.’s dream realized in 'Fuller Story' during celebrations Monday"},
